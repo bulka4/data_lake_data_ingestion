@@ -7,7 +7,7 @@ We need to create the .env file and provide there values for all the variables w
 from pathlib import Path
 import os, sys
 
-classes_path = Path(Path(__file__).parent / 'classes').resolve().as_posix()
+classes_path = Path(Path(__file__).parent.parent / 'classes').resolve().as_posix()
 sys.path.append(classes_path)
 
 from class_sql import SQL

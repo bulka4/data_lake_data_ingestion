@@ -5,7 +5,7 @@ This script is creating a specified container and directory where we will be ing
 from pathlib import Path
 import os, sys
 
-classes_path = Path(Path(__file__).parent / 'classes').resolve().as_posix()
+classes_path = Path(Path(__file__).parent.parent / 'classes').resolve().as_posix()
 sys.path.append(classes_path)
 
 from class_azure_blob import AzureBlob
