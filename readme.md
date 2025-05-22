@@ -11,6 +11,8 @@ This code creates a container in Data Lake into which we will be ingesting data.
 
 It also creates another container with a delta table that contains extract logs. They contain information about when the last time we were extracting data for each table what is needed for incremental load. For working with extract logs we are using the ExtractLog class.
 
+All the scripts mentioned in this documentation are contained in the data_processing folder.
+
 # How to use those scripts
 We can use those scripts in order to simulate an incremental load from a MS SQL db into a Azure Data Lake. In order to do that we need to follow the below steps. All those steps and scripts used in them are described below in this document in the sections 'SQL db data ingestion' and 'Data Lake data ingestion'.
 - **SQL db data ingestion part 1** - First we are preparing initial data in the SQL db which will be later on ingested into the Data Lake. We do this using the sql_ingestion_v1.py script. We are preparing here 3 tables:
