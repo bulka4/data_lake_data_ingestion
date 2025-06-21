@@ -40,6 +40,7 @@ Before we use that code we need to perform the following preparations:
     - SQL_DB_NAME - Name of the db in the SQL server from which we will be ingesting data (it can be any database on that server).
     - SQL_USERNAME - username used for logging into the SQL server.
     - SQL_PASSWORD - password used for logging into the SQL server.
+- **Install ODBC driver** - We need to have installed a proper ODBC driver which will be used by the SQLAlchemy library to connect to the SQL db. The default and recommended one for Windows is the 'ODBC Driver 18 for SQL Server'. We can use a different driver and then we need to specify that driver when initiating the SQL class which we will be using.
 
 # Script configuration
 In the config.py file we are assigning values to variables defining names of the container and directory in that container where we will be ingesting data in Data Lake.
